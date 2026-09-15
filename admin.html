@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>لوحة تحكم التفاح الأخضر</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.png?h=14e423d3">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css?v=ga-202609152012">
+  <style>
+    body { padding-bottom: 90px; }
+    .top .wrap { justify-content: space-between; }
+    .wrap { max-width: 1000px; }
+    .admin-tabs { display: flex; gap: 8px; overflow-x: auto; padding-block: 12px; }
+    .row2 { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 10px; }
+    .it { display: grid; grid-template-columns: 64px 1fr auto; gap: 10px; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--line); }
+    .it .thumb { width: 64px; height: 64px; border-radius: 12px; object-fit: cover; background: var(--gold-soft); cursor: pointer; border: 1px dashed var(--line); }
+    .it input[type=text], .it input[type=number] { padding: 8px 10px; border-radius: 10px; border: 1px solid var(--line); background: var(--bg); width: 100%; }
+    .it .prices { display: flex; gap: 6px; flex-wrap: wrap; margin-top: 6px; }
+    .it .prices label { display: flex; align-items: center; gap: 4px; font-size: 12px; color: var(--ink-2); }
+    .it .prices input { width: 84px; }
+    .flags { display: flex; gap: 10px; flex-wrap: wrap; font-size: 13px; margin-top: 6px; color: var(--ink-2); }
+    .flags label { display: flex; align-items: center; gap: 4px; }
+    .mini { padding: 7px 12px; border-radius: 10px; border: 1px solid var(--line); background: var(--surface); font-size: 13px; font-weight: 700; }
+    .mini.danger { color: var(--danger); }
+    .savebar { position: fixed; inset-inline: 0; bottom: 0; z-index: 30; background: var(--surface); border-top: 1px solid var(--line); padding-block: 10px; }
+    .savebar .wrap { display: flex; gap: 10px; align-items: center; }
+    .savebar .btn { width: auto; padding: 12px 26px; }
+    .dirty { color: var(--warn); font-weight: 700; }
+    .switch { display: flex; align-items: center; justify-content: space-between; gap: 10px; padding: 12px 0; border-bottom: 1px solid var(--line); }
+    .switch input { width: 22px; height: 22px; accent-color: var(--brand); }
+    details.cat-box { background: var(--surface); border: 1px solid var(--line); border-radius: 16px; margin-bottom: 10px; padding: 0 14px; }
+    details.cat-box > summary { cursor: pointer; padding: 14px 0; font-weight: 800; display: flex; justify-content: space-between; gap: 8px; list-style: none; }
+    .login { max-width: 380px; margin: 12vh auto; }
+    code { background: var(--gold-soft); padding: 1px 6px; border-radius: 6px; }
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap">
+    <div style="display:flex;gap:10px;align-items:center"><div class="logo"><img src="icons/icon-192.png?h=6f1f1e01" alt=""></div><div><b>لوحة التحكم</b><div class="note" id="modeNote"></div></div></div>
+    <a class="mini" href="./" target="_blank">فتح التطبيق ↗</a>
+  </div></header>
+  <main class="wrap" id="app"></main>
+  <div class="savebar" id="savebar" hidden><div class="wrap">
+    <span id="dirtyNote" class="note">لا تعديلات</span><span style="flex:1"></span>
+    <button class="mini" id="exportBtn">تنزيل نسخة</button>
+    <button class="btn" id="saveBtn">حفظ ونشر</button>
+  </div></div>
+  <div id="toasts"></div>
+  <script src="config.js?v=ga-202609152012"></script>
+  <script src="logic.js?v=ga-202609152012"></script>
+  <script src="remote.js?v=ga-202609152012"></script>
+  <script src="github-store.js?v=ga-202609152012"></script>
+  <script src="admin.js?v=ga-202609152012"></script>
+</body>
+</html>

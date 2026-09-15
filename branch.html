@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>طلبات الفرع — التفاح الأخضر</title>
+  <meta name="robots" content="noindex">
+  <link rel="icon" href="favicon.png?h=14e423d3">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css?v=ga-202609152012">
+  <style>
+    body { padding-bottom: 20px; }
+    .wrap { max-width: 1200px; }
+    .cols { display: grid; grid-template-columns: repeat(auto-fit, minmax(290px, 1fr)); gap: 14px; align-items: start; }
+    .col h2 { font-size: 17px; display: flex; justify-content: space-between; margin: 12px 0 8px; }
+    .ord { border-inline-start: 5px solid var(--gold); }
+    .ord.new { border-color: var(--danger); animation: pulse 1.6s ease-in-out infinite; }
+    @keyframes pulse { 50% { box-shadow: 0 0 0 6px rgba(179, 38, 30, .15); } }
+    .ord .acts { display: flex; gap: 8px; margin-top: 10px; }
+    .ord .acts .btn { padding: 11px; font-size: 15px; }
+    .big-count { background: var(--danger); color: #fff; border-radius: 999px; padding: 0 10px; }
+  </style>
+</head>
+<body>
+  <header class="top"><div class="wrap" style="justify-content:space-between">
+    <div style="display:flex;gap:10px;align-items:center"><div class="logo"><img src="icons/icon-192.png?h=6f1f1e01" alt=""></div><div><b id="title">طلبات الفرع</b><div class="note" id="clock"></div></div></div>
+    <button class="mini btn ghost" style="width:auto;padding:8px 14px" id="soundBtn">🔔 تفعيل التنبيه</button>
+  </div></header>
+  <main class="wrap" id="app"></main>
+  <div id="toasts"></div>
+  <script src="config.js?v=ga-202609152012"></script>
+  <script src="logic.js?v=ga-202609152012"></script>
+  <script src="remote.js?v=ga-202609152012"></script>
+  <script>
+  /* شاشة الكاشير: الطلبات لحظياً من Firebase + صوت لكل طلب جديد + تحريك الحالة بضغطة. */
+  (function () {
+    'use strict';
+    const GA = window.GA, R = window.GA_REMOTE;
+    const $ = (s) => document.querySelector(s);
+    const esc = (s) => String(s == null ? '' : s).replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]));
+    const branch = new URLSearchParams(location.search).get('b');
+    let ctx = null, known = new Set(), first = true;
+
+    if (!R) {
+      $('#app').innerHTML = '<div class="card" style="margin-top:20px"><h2>الشاشة تحتاج ربط Firebase</h2><p>حالياً الطلبات بتوصل واتساب الفرع. بعد ملء إعدادات Firebase في <code>config.js</code> وتفعيل «شاشة طلبات الفرع» من لوحة التحكم، الطلبات هتظهر هنا لحظياً بتنبيه صوتي.</p></div>';
+      return;
+    }
+
+    /* نغمة تنبيه مولَّدة بالكود (بلا ملف صوت) — المتصفح يشترط ضغطة أولى لتشغيل الصوت. */
+    function beep() {
+      if (!ctx) return;
+      const t = ctx.currentTime;
+      [0, .22, .44].forEach((d, i) => {
+        const o = ctx.createOscillator(), g = ctx.createGain();
+        o.frequency.value = [880, 1175, 1568][i]; o.type = 'sine';
+        g.gain.setValueAtTime(.0001, t + d); g.gain.exponentialRampToValueAtTime(.4, t + d + .02); g.gain.exponentialRampToValueAtTime(.0001, t + d + .2);
+        o.connect(g).connect(ctx.destination); o.start(t + d); o.stop(t + d + .22);
+      });
+    }
+    $('#soundBtn').onclick = () => { ctx = ctx || new (window.AudioContext || window.webkitAudioContext)(); beep(); $('#soundBtn').textContent = '🔔 التنبيه مفعّل'; };
+
+    setInterval(() => { $('#clock').textContent = new Date().toLocaleTimeString('ar-SA-u-nu-latn'); }, 1000);
+
+    const NEXT = {
+      new: [['accepted', 'قبول', ''], ['cancelled', 'رفض', 'ghost']],
+      accepted: [['ready', 'جاهز', '']],
+      ready: (o) => [[o.fulfillment === 'delivery' ? 'out' : 'done', o.fulfillment === 'delivery' ? 'خرج للتوصيل' : 'تم التسليم', '']],
+      out: [['done', 'تم التسليم', '']],
+    };
+    const COLS = [['new', 'جديدة'], ['accepted', 'قيد التجهيز'], ['ready', 'جاهزة / في الطريق']];
+
+    function card(o) {
+      const acts = typeof NEXT[o.status] === 'function' ? NEXT[o.status](o) : NEXT[o.status] || [];
+      const t = o.createdAt && o.createdAt.toDate ? o.createdAt.toDate() : new Date(o.placedAt);
+      return `<div class="card ord ${o.status === 'new' ? 'new' : ''}">
+        <div style="display:flex;justify-content:space-between"><b>${esc(o.code)}</b><span class="note">${t.toLocaleTimeString('ar-SA-u-nu-latn', { hour: 'numeric', minute: '2-digit' })}</span></div>
+        <div><b>${esc(GA.FULFILL[o.fulfillment])}</b> · ${esc(o.when)}${branch ? '' : ' · ' + esc(o.branchName)}</div>
+        <div class="note">${esc(o.customer.name)} · <a href="tel:${esc(o.customer.phone)}">${esc(o.customer.phone)}</a></div>
+        ${o.car ? `<div>🚗 ${esc(o.car)}</div>` : ''}
+        ${o.fulfillment === 'delivery' ? `<div>📍 ${esc(o.address)} ${o.location ? `<a target="_blank" href="https://maps.google.com/?q=${o.location.lat},${o.location.lng}">الخريطة</a>` : ''}</div>` : ''}
+        <div style="margin-top:8px">${o.lines.map((l) => `<div class="sum"><span><b>${l.qty}×</b> ${esc(l.name)}${l.variant ? ' (' + esc(l.variant) + ')' : ''}${(l.addons || []).length ? ' + ' + esc(l.addons.join('، ')) : ''}${l.note ? `<br><small>↳ ${esc(l.note)}</small>` : ''}</span><span>${GA.fmt(l.unitH * l.qty)}</span></div>`).join('')}</div>
+        ${o.note ? `<div class="alert">📝 ${esc(o.note)}</div>` : ''}
+        <div class="sum total"><span>${esc(GA.PAY[o.payment] || o.payment)}</span><span>${GA.fmt(o.totals.totalH)}</span></div>
+        <div class="acts">${acts.map(([st, label, cls]) => `<button class="btn ${cls}" data-id="${esc(o.id)}" data-st="${st}">${label}</button>`).join('')}</div>
+      </div>`;
+    }
+
+    function render(orders) {
+      const fresh = orders.filter((o) => o.status === 'new' && !known.has(o.id));
+      orders.forEach((o) => known.add(o.id));
+      if (!first && fresh.length) { beep(); document.title = `(${fresh.length}) طلب جديد`; }
+      first = false;
+      const by = (st) => orders.filter((o) => (st === 'ready' ? ['ready', 'out'].includes(o.status) : o.status === st));
+      $('#app').innerHTML = `<div class="cols">${COLS.map(([st, n]) => {
+        const list = by(st);
+        return `<section class="col"><h2>${n} ${list.length ? `<span class="${st === 'new' ? 'big-count' : 'badge'}">${list.length}</span>` : ''}</h2>${list.map(card).join('') || '<p class="note">لا يوجد</p>'}</section>`;
+      }).join('')}</div>`;
+      document.querySelectorAll('[data-st]').forEach((b) => b.onclick = async () => {
+        if (b.dataset.st === 'cancelled' && !confirm('رفض الطلب؟ سيظهر للعميل «أُلغي».')) return;
+        b.disabled = true;
+        try { await R.setStatus(b.dataset.id, b.dataset.st); document.title = 'طلبات الفرع'; } catch (e) { alert('تعذّر التحديث: ' + e.message); b.disabled = false; }
+      });
+    }
+
+    R.onAuth((u) => {
+      if (!u) {
+        $('#app').innerHTML = `<div class="card" style="max-width:380px;margin:12vh auto"><h2 style="margin-top:0">دخول الفرع</h2>
+          <div class="field"><label>البريد</label><input id="em" type="email" autocomplete="username"></div>
+          <div class="field"><label>كلمة السر</label><input id="pw" type="password" autocomplete="current-password"></div>
+          <button class="btn" id="lg">دخول</button><div id="e"></div></div>`;
+        $('#lg').onclick = () => R.signIn($('#em').value.trim(), $('#pw').value).catch((e) => { $('#e').innerHTML = `<div class="alert">${esc(e.message)}</div>`; });
+        return;
+      }
+      fetch('data/menu.json').then((r) => r.json()).then((m) => {
+        const b = m.branches.find((x) => x.id === branch);
+        $('#title').textContent = b ? `طلبات ${b.name}` : 'طلبات كل الفروع';
+      }).catch(() => {});
+      R.watchOrders(branch, render);
+    });
+  })();
+  </script>
+</body>
+</html>

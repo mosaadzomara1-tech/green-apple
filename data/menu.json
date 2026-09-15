@@ -1,0 +1,1797 @@
+{
+ "version": 19,
+ "updated": "2026-09-15",
+ "brand": {
+  "name": "مخابز التفاح الأخضر",
+  "nameEn": "Green Apple Bakeries",
+  "subBrands": [
+   "GA Pies",
+   "La Casa de Pan"
+  ],
+  "tagline": "خبز طازج كل يوم .. من قلب المنطقة الشرقية",
+  "instagram": [
+   "lacasadepan.sa",
+   "GA.Pies"
+  ],
+  "email": "info@greenaplletdco.com",
+  "phones": [
+   "0549774078",
+   "0537354787"
+  ],
+  "vatNumber": "310463095800003",
+  "heroImage": "img/hero.webp?h=ff7fab0a"
+ },
+ "settings": {
+  "currency": "ر.س",
+  "vatRate": 0.15,
+  "pricesIncludeVat": true,
+  "branchMode": "nearest",
+  "singleBranchId": "dhahran",
+  "orderChannels": {
+   "whatsapp": true,
+   "dashboard": false
+  },
+  "fulfillment": {
+   "pickup": true,
+   "delivery": true
+  },
+  "payments": {
+   "cash": true,
+   "cardOnDelivery": true,
+   "online": false
+  },
+  "delivery": {
+   "fee": 10,
+   "freeAbove": 100,
+   "minOrder": 30,
+   "radiusKm": 12
+  },
+  "notice": "جميع الأسعار شاملة ضريبة القيمة المضافة"
+ },
+ "branches": [
+  {
+   "id": "dhahran",
+   "name": "فرع الظهران – القصور",
+   "address": "شارع الأمير أحمد، حي القصور، الظهران 34246",
+   "lat": 26.3440238,
+   "lng": 50.1628151,
+   "approx": false,
+   "mapUrl": "https://maps.app.goo.gl/wLhUH6N9AaG5NoTJ8",
+   "phone": "0562541688",
+   "whatsapp": "966562541688",
+   "hours": {
+    "open": "04:00",
+    "close": "24:00"
+   },
+   "active": true
+  },
+  {
+   "id": "khuzama",
+   "name": "فرع الخبر – الخزامى",
+   "address": "شارع 14 A، حي الخزامى، الخبر 34718",
+   "lat": 26.2088429,
+   "lng": 50.1900796,
+   "approx": false,
+   "mapUrl": "https://maps.app.goo.gl/RzwXB1atNVKQaY6o8",
+   "phone": "0138656888",
+   "whatsapp": "966562541688",
+   "hours": {
+    "open": "04:00",
+    "close": "24:00"
+   },
+   "active": true
+  }
+ ],
+ "sections": [
+  {
+   "id": "pies",
+   "name": "الفطائر",
+   "nameEn": "GA Pies",
+   "image": "img/sections/pies.webp?h=06dbfdb0",
+   "categories": [
+    {
+     "id": "labneh",
+     "name": "لبنة",
+     "nameEn": "Labneh",
+     "addons": [
+      {
+       "name": "عجينة بُر",
+       "price": 1
+      }
+     ],
+     "items": [
+      {
+       "id": "labneh",
+       "name": "لبنة",
+       "nameEn": "Labneh",
+       "price": 7,
+       "image": "img/items/labneh.webp?h=4063a933",
+       "calories": 232,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-zaatar",
+       "name": "لبنة بالزعتر",
+       "nameEn": "Labneh with zaatar",
+       "price": 8,
+       "image": "img/items/labneh-zaatar.webp?h=28d01e87",
+       "calories": 280,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-cheese-zaatar",
+       "name": "لبنة بالجبن والزعتر",
+       "nameEn": "Labneh with cheese & zaatar",
+       "price": 10,
+       "image": "img/items/labneh-cheese-zaatar.webp?h=cb9b4adc",
+       "calories": 244,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-veg",
+       "name": "لبنة بالخضار",
+       "nameEn": "Labneh with vegetables",
+       "price": 8,
+       "image": "img/items/labneh-veg.webp?h=129dab30",
+       "calories": 237,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-honey",
+       "name": "لبنة بالعسل",
+       "nameEn": "Labneh with honey",
+       "price": 8,
+       "image": "img/items/labneh-honey.webp?h=cb9b4adc",
+       "calories": 241,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-cheese",
+       "name": "لبنة بالجبن",
+       "nameEn": "Labneh with cheese",
+       "price": 8,
+       "image": "img/items/labneh-cheese.webp?h=cb9b4adc",
+       "calories": 235,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-egg",
+       "name": "لبنة بالبيض",
+       "nameEn": "Labneh with egg",
+       "price": 8,
+       "image": "img/items/labneh-egg.webp?h=a4431dd4",
+       "calories": 214,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-cheese-egg",
+       "name": "لبنة بالجبن والبيض",
+       "nameEn": "Labneh with cheese & egg",
+       "price": 9,
+       "image": "img/items/labneh-cheese-egg.webp?h=a4431dd4",
+       "calories": 235,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-olives",
+       "name": "لبنة بالزيتون",
+       "nameEn": "Labneh with olives",
+       "price": 8,
+       "image": "img/items/labneh-olives.webp?h=4063a933",
+       "calories": 213,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "labneh-cheese-olives",
+       "name": "لبنة بالجبن والزيتون",
+       "nameEn": "Labneh with cheese & olives",
+       "price": 9,
+       "image": "img/items/labneh-cheese-olives.webp?h=cb9b4adc",
+       "calories": 244,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ]
+    },
+    {
+     "id": "cheese",
+     "name": "جبن",
+     "nameEn": "Cheese",
+     "addons": [
+      {
+       "name": "عجينة بُر",
+       "price": 1
+      }
+     ],
+     "items": [
+      {
+       "id": "cheese-akkawi",
+       "name": "جبن عكاوي",
+       "nameEn": "Cheese akkawi",
+       "price": 8,
+       "image": "img/items/cheese-akkawi.webp?h=cb9b4adc",
+       "calories": 289,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-mozzarella",
+       "name": "جبن موزاريلا",
+       "nameEn": "Cheese mozzarella",
+       "price": 8,
+       "image": "img/items/cheese-mozzarella.webp?h=cb9b4adc",
+       "calories": 297,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-cheddar",
+       "name": "جبن شيدر",
+       "nameEn": "Cheddar cheese",
+       "price": 8,
+       "image": "img/items/cheese-cheddar.webp?h=cb9b4adc",
+       "calories": 340,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-liquid",
+       "name": "جبن سائل",
+       "nameEn": "Liquid cheese",
+       "price": 8,
+       "image": "img/items/cheese-liquid.webp?h=cb9b4adc",
+       "calories": 352,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-olives",
+       "name": "جبن بالزيتون",
+       "nameEn": "Cheese & olives",
+       "price": 8,
+       "image": "img/items/cheese-olives.webp?h=cb9b4adc",
+       "calories": 283,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-mix",
+       "name": "جبن مشكل",
+       "nameEn": "Mix cheese",
+       "price": 10,
+       "image": "img/items/cheese-mix.webp?h=cb9b4adc",
+       "calories": 304,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-mix-olives",
+       "name": "جبن مشكل بالزيتون",
+       "nameEn": "Mix cheese with olives",
+       "price": 11,
+       "image": "img/items/cheese-mix-olives.webp?h=cb9b4adc",
+       "calories": 310,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-honey",
+       "name": "جبن عسل",
+       "nameEn": "Cheese with honey",
+       "price": 9,
+       "image": "img/items/cheese-honey.webp?h=cb9b4adc",
+       "calories": 348,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-zaatar",
+       "name": "جبن زعتر",
+       "nameEn": "Cheese with zaatar",
+       "price": 9,
+       "image": "img/items/cheese-zaatar.webp?h=cb9b4adc",
+       "calories": 341,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "cheese-veg",
+       "name": "جبن خضار",
+       "nameEn": "Cheese with vegetables",
+       "price": 10,
+       "image": "img/items/cheese-veg.webp?h=cb9b4adc",
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم",
+       "calories": 251
+      },
+      {
+       "id": "cheese-egg",
+       "name": "بيض بالجبن",
+       "nameEn": "Cheese with egg",
+       "price": 9,
+       "image": "img/items/cheese-egg.webp?h=a4431dd4",
+       "calories": 295,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ],
+     "image": "img/categories/cheese.webp?h=653d2c46"
+    },
+    {
+     "id": "zaatar",
+     "name": "زعتر",
+     "nameEn": "Zaatar",
+     "addons": [
+      {
+       "name": "عجينة بُر",
+       "price": 1
+      }
+     ],
+     "items": [
+      {
+       "id": "zaatar",
+       "name": "زعتر",
+       "nameEn": "Zaatar",
+       "price": 4,
+       "image": "img/items/zaatar.webp?h=7f547cd2",
+       "calories": 300,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "zaatar-cheese",
+       "name": "زعتر بالجبن",
+       "nameEn": "Zaatar with cheese",
+       "price": 5,
+       "image": "img/items/zaatar-cheese.webp?h=0db6b76e",
+       "calories": 402,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "zaatar-veg",
+       "name": "زعتر بالخضار",
+       "nameEn": "Zaatar vegetables",
+       "price": 6,
+       "image": "img/items/zaatar-veg.webp?h=0db6b76e",
+       "calories": 301,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "zaatar-veg-cheese",
+       "name": "زعتر بالخضار والجبن",
+       "nameEn": "Zaatar vegetables & cheese",
+       "price": 7,
+       "image": "img/items/zaatar-veg-cheese.webp?h=0db6b76e",
+       "calories": 317,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ]
+    },
+    {
+     "id": "pizza",
+     "name": "بيتزا",
+     "nameEn": "Pizza",
+     "addons": [
+      {
+       "name": "عجينة بُر",
+       "price": 1
+      }
+     ],
+     "items": [
+      {
+       "id": "pizza-cheese",
+       "name": "بيتزا جبن",
+       "nameEn": "Pizza cheese",
+       "price": 12,
+       "image": "img/items/pizza-cheese.webp?h=b6274300",
+       "calories": 251,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "pizza-veg",
+       "name": "بيتزا خضار",
+       "nameEn": "Vegetable pizza",
+       "price": 15,
+       "image": "img/items/pizza-veg.webp?h=7b1d3635",
+       "calories": 204,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "pizza-meat",
+       "name": "بيتزا لحم",
+       "nameEn": "Meat pizza",
+       "price": 20,
+       "image": "img/items/pizza-meat.webp?h=5bcfc98e",
+       "calories": 196,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "pizza-chicken",
+       "name": "بيتزا دجاج",
+       "nameEn": "Chicken pizza",
+       "price": 20,
+       "image": "img/items/pizza-chicken.webp?h=7b1d3635",
+       "calories": 211,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "pizza-pepperoni",
+       "name": "بيتزا بيبروني",
+       "nameEn": "Pepperoni pizza",
+       "price": 20,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ],
+     "image": "img/categories/pizza.webp?h=c7603246"
+    },
+    {
+     "id": "mini-pies",
+     "name": "ميني فطائر",
+     "nameEn": "Mini Pies",
+     "items": [
+      {
+       "id": "mini-12",
+       "name": "ميني فطائر ١٢ حبة",
+       "nameEn": "Mini pies (12 pcs)",
+       "variants": [
+        {
+         "name": "أبيض",
+         "price": 22
+        },
+        {
+         "name": "بُر",
+         "price": 24
+        }
+       ],
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "mini-24",
+       "name": "ميني فطائر ٢٤ حبة",
+       "nameEn": "Mini pies (24 pcs)",
+       "variants": [
+        {
+         "name": "أبيض",
+         "price": 40
+        },
+        {
+         "name": "بُر",
+         "price": 44
+        }
+       ],
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "mini-36",
+       "name": "ميني فطائر ٣٦ حبة",
+       "nameEn": "Mini pies (36 pcs)",
+       "variants": [
+        {
+         "name": "أبيض",
+         "price": 50,
+         "calories": 480
+        },
+        {
+         "name": "بُر",
+         "price": 56,
+         "calories": 450
+        }
+       ],
+       "image": "img/items/mini-36.webp?h=fec1435b",
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "mini-48",
+       "name": "ميني فطائر ٤٨ حبة",
+       "nameEn": "Mini pies (48 pcs)",
+       "variants": [
+        {
+         "name": "أبيض",
+         "price": 65,
+         "calories": 623
+        },
+        {
+         "name": "بُر",
+         "price": 74,
+         "calories": 582
+        }
+       ],
+       "image": "img/items/mini-48.webp?h=fec1435b",
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ],
+     "image": "img/categories/mini-pies.webp?h=fec1435b"
+    },
+    {
+     "id": "spinach",
+     "name": "سبانخ",
+     "nameEn": "Spinach",
+     "addons": [
+      {
+       "name": "عجينة بُر",
+       "price": 1
+      }
+     ],
+     "items": [
+      {
+       "id": "spinach",
+       "name": "سبانخ",
+       "nameEn": "Spinach",
+       "price": 7,
+       "image": "img/items/spinach.webp?h=dca73279",
+       "calories": 220,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "spinach-labneh",
+       "name": "سبانخ باللبنة",
+       "nameEn": "Spinach with labneh",
+       "price": 9,
+       "image": "img/items/spinach-labneh.webp?h=dca73279",
+       "calories": 261,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "spinach-cheese",
+       "name": "سبانخ بالجبن",
+       "nameEn": "Spinach with cheese",
+       "price": 9,
+       "image": "img/items/spinach-cheese.webp?h=dca73279",
+       "calories": 263,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ]
+    },
+    {
+     "id": "meat",
+     "name": "لحم ودجاج",
+     "nameEn": "Meat",
+     "addons": [
+      {
+       "name": "عجينة بُر",
+       "price": 1
+      }
+     ],
+     "items": [
+      {
+       "id": "meat-dough",
+       "name": "لحم بالعجين",
+       "nameEn": "Meat with dough",
+       "price": 10,
+       "image": "img/items/meat-dough.webp?h=a47d8317",
+       "calories": 324,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "meat-cheese",
+       "name": "لحم بالجبن",
+       "nameEn": "Meat with cheese",
+       "price": 11,
+       "image": "img/items/meat-cheese.webp?h=a47d8317",
+       "calories": 311,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "chicken-dough",
+       "name": "دجاج بالعجين",
+       "nameEn": "Chicken with dough",
+       "price": 10,
+       "image": "img/items/chicken-dough.webp?h=b2ca1525",
+       "calories": 385,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "chicken-cheese",
+       "name": "دجاج بالجبن",
+       "nameEn": "Chicken with cheese",
+       "price": 11,
+       "image": "img/items/chicken-cheese.webp?h=b2ca1525",
+       "calories": 367,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ]
+    },
+    {
+     "id": "sweet",
+     "name": "الحلو",
+     "nameEn": "Sweet",
+     "addons": [
+      {
+       "name": "عجينة بُر",
+       "price": 1
+      }
+     ],
+     "items": [
+      {
+       "id": "halwa",
+       "name": "حلاوة سادة",
+       "nameEn": "Plain halwa",
+       "price": 6,
+       "image": "img/items/halwa.webp?h=cb9b4adc",
+       "calories": 422,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "halwa-cheese",
+       "name": "حلاوة طحينية بالجبن",
+       "nameEn": "Halwa with cheese",
+       "price": 8,
+       "image": "img/items/halwa-cheese.webp?h=cb9b4adc",
+       "calories": 434,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "halwa-labneh",
+       "name": "حلاوة طحينية باللبنة",
+       "nameEn": "Halwa with labneh",
+       "price": 8,
+       "image": "img/items/halwa-labneh.webp?h=cb9b4adc",
+       "calories": 435,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "nutella",
+       "name": "نوتيلا",
+       "nameEn": "Nutella",
+       "price": 7,
+       "image": "img/items/nutella.webp?h=cb9b4adc",
+       "calories": 524,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "honey-cream",
+       "name": "قشطة بالعسل",
+       "nameEn": "Honey cream",
+       "price": 8,
+       "image": "img/items/honey-cream.webp?h=cb9b4adc",
+       "calories": 282,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "nightingale-nest",
+       "name": "عش بلبل",
+       "nameEn": "Nightingale nest",
+       "price": 12,
+       "image": "img/items/nightingale-nest.webp?h=675a8e38",
+       "calories": 246,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ]
+    },
+    {
+     "id": "grill",
+     "name": "مشويات",
+     "nameEn": "Grill",
+     "items": [
+      {
+       "id": "meat-kabab",
+       "name": "كباب لحم حاشي",
+       "nameEn": "Meat kabab hashi",
+       "price": 17,
+       "image": "img/items/meat-kabab.webp?h=67ed4fcc",
+       "calories": 319,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "meat-kabab-labneh",
+       "name": "كباب لحم باللبنة",
+       "nameEn": "Meat kabab with labneh",
+       "price": 18,
+       "image": "img/items/meat-kabab-labneh.webp?h=67ed4fcc",
+       "calories": 310,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "meat-kabab-cheese",
+       "name": "كباب لحم بالجبن",
+       "nameEn": "Meat kabab with cheese",
+       "price": 18,
+       "image": "img/items/meat-kabab-cheese.webp?h=67ed4fcc",
+       "calories": 314,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "chicken-kabab",
+       "name": "كباب دجاج",
+       "nameEn": "Chicken kabab",
+       "price": 14,
+       "image": "img/items/chicken-kabab.webp?h=f96c84e5",
+       "calories": 373,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "chicken-kabab-labneh",
+       "name": "كباب دجاج باللبنة",
+       "nameEn": "Chicken kabab with labneh",
+       "price": 15,
+       "image": "img/items/chicken-kabab-labneh.webp?h=f96c84e5",
+       "calories": 257,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "chicken-kabab-cheese",
+       "name": "كباب دجاج بالجبن",
+       "nameEn": "Chicken kabab with cheese",
+       "price": 15,
+       "image": "img/items/chicken-kabab-cheese.webp?h=f96c84e5",
+       "calories": 261,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "shish-tawook",
+       "name": "شيش طاووق",
+       "nameEn": "Shish tawook",
+       "price": 14,
+       "image": "img/items/shish-tawook.webp?h=c0cfabc3",
+       "calories": 240,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "shish-tawook-labneh",
+       "name": "شيش طاووق باللبنة",
+       "nameEn": "Shish tawook with labneh",
+       "price": 15,
+       "image": "img/items/shish-tawook-labneh.webp?h=c0cfabc3",
+       "calories": 253,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "shish-tawook-cheese",
+       "name": "شيش طاووق بالجبن",
+       "nameEn": "Shish tawook with cheese",
+       "price": 15,
+       "image": "img/items/shish-tawook-cheese.webp?h=c0cfabc3",
+       "calories": 245,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ]
+    },
+    {
+     "id": "falafel",
+     "name": "فلافل",
+     "nameEn": "Falafel",
+     "items": [
+      {
+       "id": "falafel",
+       "name": "فلافل سادة",
+       "nameEn": "Plain falafel",
+       "price": 6,
+       "image": "img/items/falafel.webp?h=60b418ae",
+       "calories": 296,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "falafel-cheese",
+       "name": "فلافل بالجبن",
+       "nameEn": "Falafel with cheese",
+       "price": 8,
+       "image": "img/items/falafel-cheese.webp?h=60b418ae",
+       "calories": 322,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "falafel-labneh",
+       "name": "فلافل باللبنة",
+       "nameEn": "Falafel with labneh",
+       "price": 8,
+       "image": "img/items/falafel-labneh.webp?h=0a87c12c",
+       "calories": 306,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "stuffed-falafel",
+       "name": "محشي فلافل",
+       "nameEn": "Stuffed falafel",
+       "price": 8,
+       "image": "img/items/stuffed-falafel.webp?h=60b418ae",
+       "calories": 343,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "stuffed-falafel-cheese",
+       "name": "محشي فلافل بالجبن",
+       "nameEn": "Stuffed falafel with cheese",
+       "price": 9,
+       "image": "img/items/stuffed-falafel-cheese.webp?h=60b418ae",
+       "calories": 351,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      },
+      {
+       "id": "stuffed-falafel-labneh",
+       "name": "محشي فلافل باللبنة",
+       "nameEn": "Stuffed falafel with labneh",
+       "price": 9,
+       "image": "img/items/stuffed-falafel-labneh.webp?h=0a87c12c",
+       "calories": 347,
+       "allergens": "القمح (الجلوتين) اللبن ومشتقاته والسمسم"
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "id": "mudawar",
+   "name": "المدوّر",
+   "nameEn": "La Casa de Pan",
+   "image": "img/sections/mudawar.webp?h=0aeb487a",
+   "note": "عجينة ذهبية محشوة، مغطاة بالسمسم وحبة البركة",
+   "categories": [
+    {
+     "id": "mudawar-cheese",
+     "name": "مدور أجبان",
+     "nameEn": "Cheese rolls",
+     "items": [
+      {
+       "id": "md-feta",
+       "name": "جبن فيتا",
+       "nameEn": "Feta cheese",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بجبن الفيتا",
+       "image": "img/items/md-feta.webp?h=155887b5"
+      },
+      {
+       "id": "md-liquid-cheese",
+       "name": "جبن سائل",
+       "nameEn": "Liquid cheese",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بالجبن الكريمي",
+       "image": "img/items/md-liquid-cheese.webp?h=920daf43"
+      },
+      {
+       "id": "md-mix-cheese",
+       "name": "أجبان مشكل",
+       "nameEn": "Mixed cheese",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بمزيج أجبان",
+       "image": "img/items/md-mix-cheese.webp?h=155887b5"
+      },
+      {
+       "id": "md-halloumi-pesto",
+       "name": "حلومي بيستو",
+       "nameEn": "Halloumi pesto",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بجبن الحلوم وصوص البيستو",
+       "image": "img/items/md-halloumi-pesto.webp?h=920daf43"
+      },
+      {
+       "id": "md-akkawi",
+       "name": "جبن عكاوي",
+       "nameEn": "Akkawi cheese",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بجبن العكاوي",
+       "image": "img/items/md-akkawi.webp?h=920daf43"
+      }
+     ],
+     "image": "img/categories/mudawar-cheese.webp?h=155887b5"
+    },
+    {
+     "id": "mudawar-meat",
+     "name": "مدور لحوم",
+     "nameEn": "Meat rolls",
+     "items": [
+      {
+       "id": "md-chicken-cheddar",
+       "name": "دجاج + جبن شيدر",
+       "nameEn": "Chicken & cheddar",
+       "price": 6,
+       "desc": "عجينة ذهبية محشوة بالدجاج الجريل مع جبن الشيدر",
+       "image": "img/items/md-chicken-cheddar.webp?h=155887b5"
+      },
+      {
+       "id": "md-hotdog-cheese",
+       "name": "هوت دوج + جبن",
+       "nameEn": "Hot dog & cheese",
+       "price": 6,
+       "desc": "عجينة ذهبية محشوة بالهوت دوج ومكس الأجبان",
+       "image": "img/items/md-hotdog-cheese.webp?h=77831202"
+      }
+     ],
+     "image": "img/categories/mudawar-meat.webp?h=77831202"
+    },
+    {
+     "id": "mudawar-egg",
+     "name": "مدور بيض",
+     "nameEn": "Egg rolls",
+     "items": [
+      {
+       "id": "md-shakshuka",
+       "name": "شكشوكة",
+       "nameEn": "Shakshuka",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بالشكشوكة"
+      },
+      {
+       "id": "md-shakshuka-cheese",
+       "name": "شكشوكة + جبن",
+       "nameEn": "Shakshuka & cheese",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بمكس الشكشوكة مع الجبن"
+      },
+      {
+       "id": "md-egg-cheese",
+       "name": "بيض + جبن",
+       "nameEn": "Egg & cheese",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بمكس البيض مع الجبن"
+      }
+     ],
+     "image": "img/categories/mudawar-egg.webp?h=155887b5"
+    },
+    {
+     "id": "mudawar-mixed",
+     "name": "مدور متنوع",
+     "nameEn": "Mixed rolls",
+     "items": [
+      {
+       "id": "md-labneh",
+       "name": "لبنة",
+       "nameEn": "Labneh",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة باللبنة",
+       "image": "img/items/md-labneh.webp?h=920daf43"
+      },
+      {
+       "id": "md-labneh-falafel",
+       "name": "لبنة + فلافل",
+       "nameEn": "Labneh & falafel",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بالفلافل واللبنة",
+       "image": "img/items/md-labneh-falafel.webp?h=6e35cc26"
+      },
+      {
+       "id": "md-zaatar",
+       "name": "زعتر",
+       "nameEn": "Zaatar",
+       "price": 3,
+       "desc": "عجينة ذهبية محشوة بالزعتر",
+       "image": "img/items/md-zaatar.webp?h=8fba2139"
+      },
+      {
+       "id": "md-spinach",
+       "name": "سبانخ",
+       "nameEn": "Spinach",
+       "price": 3,
+       "desc": "عجينة ذهبية محشوة بالسبانخ",
+       "image": "img/items/md-spinach.webp?h=8fba2139"
+      },
+      {
+       "id": "md-spicy-tuna",
+       "name": "تونا حار",
+       "nameEn": "Spicy tuna",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بالتونة مع الهالبينو",
+       "image": "img/items/md-spicy-tuna.webp?h=155887b5"
+      },
+      {
+       "id": "md-liver",
+       "name": "كبدة",
+       "nameEn": "Liver",
+       "price": 6,
+       "desc": "عجينة ذهبية محشوة بالكبدة الفريش",
+       "image": "img/items/md-liver.webp?h=3a68af87"
+      },
+      {
+       "id": "md-pizza",
+       "name": "مدور بيتزا",
+       "nameEn": "Pizza roll",
+       "price": 4,
+       "desc": "عجينة ذهبية محشوة بمكونات البيتزا",
+       "image": "img/items/md-pizza.webp?h=155887b5"
+      }
+     ],
+     "image": "img/categories/mudawar-mixed.webp?h=8fba2139"
+    },
+    {
+     "id": "mudawar-sweet",
+     "name": "مدور حلو",
+     "nameEn": "Sweet rolls",
+     "items": [
+      {
+       "id": "md-peanut",
+       "name": "فول سوداني",
+       "nameEn": "Peanut",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بالفول السوداني مع الجبنة والعسل",
+       "image": "img/items/md-peanut.webp?h=155887b5"
+      },
+      {
+       "id": "md-nutella",
+       "name": "نوتيلا",
+       "nameEn": "Nutella",
+       "price": 5,
+       "desc": "عجينة ذهبية محشوة بالشوكولاتة",
+       "image": "img/items/md-nutella.webp?h=155887b5"
+      }
+     ],
+     "image": "img/categories/mudawar-sweet.webp?h=155887b5"
+    },
+    {
+     "id": "mudawar-box",
+     "name": "بوكس المدور",
+     "nameEn": "Roll box",
+     "items": [
+      {
+       "id": "md-box-16",
+       "name": "بوكس منوع ١٦ حبة ميني",
+       "nameEn": "Mixed box 16 mini",
+       "price": 46,
+       "desc": "٢ زعتر + ٤ كبدة + ٢ جبن فيتا + ٢ بيض جبن + ٢ شكشوكة + ٢ دجاج",
+       "image": "img/items/md-box-16.webp?h=b60639aa"
+      }
+     ],
+     "image": "img/categories/mudawar-box.webp?h=b60639aa"
+    }
+   ]
+  },
+  {
+   "id": "bakery",
+   "name": "المخبوزات والمعجنات",
+   "nameEn": "Bakery",
+   "image": "img/sections/bakery.webp?h=5c302430",
+   "categories": [
+    {
+     "id": "croissant",
+     "name": "الكروسان",
+     "nameEn": "Croissant",
+     "desc": "طبقات رقيقة تتفتح مع عبير الزبدة الفاخرة",
+     "items": [
+      {
+       "id": "croissant-zaatar",
+       "name": "كروسان بالزعتر",
+       "nameEn": "Zaatar croissant",
+       "price": null,
+       "variants": [
+        {
+         "name": "70 جم",
+         "price": null
+        },
+        {
+         "name": "80 جم",
+         "price": null
+        },
+        {
+         "name": "100 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/croissant-zaatar.webp?h=752c430c"
+      },
+      {
+       "id": "croissant-butter",
+       "name": "كروسان كلاسيك بالزبدة",
+       "nameEn": "Butter croissant",
+       "price": null,
+       "variants": [
+        {
+         "name": "70 جم",
+         "price": null
+        },
+        {
+         "name": "80 جم",
+         "price": null
+        },
+        {
+         "name": "100 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/croissant-butter.webp?h=5c4257a6"
+      },
+      {
+       "id": "croissant-cheese",
+       "name": "كروسان بالجبنة",
+       "nameEn": "Cheese croissant",
+       "price": null,
+       "variants": [
+        {
+         "name": "70 جم",
+         "price": null
+        },
+        {
+         "name": "80 جم",
+         "price": null
+        },
+        {
+         "name": "100 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/croissant-cheese.webp?h=83b131db"
+      }
+     ],
+     "image": "img/categories/croissant.webp?h=2b25827f"
+    },
+    {
+     "id": "burger-bun",
+     "name": "خبز البرجر",
+     "nameEn": "Burger Bun",
+     "desc": "بقوام طري يتحمّل الصوص ولا يتفتت",
+     "items": [
+      {
+       "id": "bun-sesame",
+       "name": "خبز برجر بالسمسم",
+       "nameEn": "Sesame burger bun",
+       "price": null,
+       "image": "img/items/bun-sesame.webp?h=26b5ea7a"
+      },
+      {
+       "id": "bun-mix-sesame",
+       "name": "كلاسيك بالسمسم وحبة البركة",
+       "nameEn": "Mix sesame bun",
+       "price": null,
+       "image": "img/items/bun-mix-sesame.webp?h=fef0867e"
+      },
+      {
+       "id": "bun-classic",
+       "name": "خبز برجر كلاسيك",
+       "nameEn": "Classic burger bun",
+       "price": null,
+       "image": "img/items/bun-classic.webp?h=832cdcbc"
+      },
+      {
+       "id": "bun-slider-potato",
+       "name": "سلايدر خبز بطاطس",
+       "nameEn": "Slider potato bun",
+       "price": null,
+       "image": "img/items/bun-slider-potato.webp?h=136b5c23"
+      },
+      {
+       "id": "bun-sesame-potato",
+       "name": "خبز بطاطس بالسمسم",
+       "nameEn": "Sesame potato bun",
+       "price": null,
+       "image": "img/items/bun-sesame-potato.webp?h=ccce24be"
+      },
+      {
+       "id": "bun-potato",
+       "name": "خبز بطاطس",
+       "nameEn": "Potato bun",
+       "price": null,
+       "image": "img/items/bun-potato.webp?h=eff217bd"
+      },
+      {
+       "id": "bun-brioche-sesame",
+       "name": "خبز بريوش بالسمسم",
+       "nameEn": "Sesame brioche bun",
+       "price": null,
+       "image": "img/items/bun-brioche-sesame.webp?h=d6cd2203"
+      },
+      {
+       "id": "bun-brioche-wb",
+       "name": "بريوش سمسم أبيض وأسمر",
+       "nameEn": "W&B sesame brioche",
+       "price": null,
+       "image": "img/items/bun-brioche-wb.webp?h=c4dc1df3"
+      },
+      {
+       "id": "bun-brioche-plain",
+       "name": "خبز بريوش سادة",
+       "nameEn": "Plain brioche bun",
+       "price": null,
+       "image": "img/items/bun-brioche-plain.webp?h=59ebbc1c"
+      }
+     ],
+     "image": "img/categories/burger-bun.webp?h=0b110bdb"
+    },
+    {
+     "id": "pretzel",
+     "name": "خبز البريتزل",
+     "nameEn": "Pretzel Bread",
+     "desc": "قشرة داكنة لامعة وقلب طري",
+     "items": [
+      {
+       "id": "pretzel-samoli",
+       "name": "صامولي بريتزل",
+       "nameEn": "Pretzel samoli",
+       "price": null,
+       "image": "img/items/pretzel-samoli.webp?h=ee608922"
+      },
+      {
+       "id": "pretzel-bun",
+       "name": "برجر بريتزل",
+       "nameEn": "Pretzel burger bun",
+       "price": null,
+       "image": "img/items/pretzel-bun.webp?h=5839d22f"
+      }
+     ],
+     "image": "img/categories/pretzel.webp?h=74dd803a"
+    },
+    {
+     "id": "samoli",
+     "name": "خبز الصامولي",
+     "nameEn": "Samoli",
+     "desc": "يُخبز يومياً — الأحجام ٤ · ٦ · ٧ · ٩ إنش",
+     "items": [
+      {
+       "id": "samoli-brioche-sesame",
+       "name": "صامولي بريوش سمسم",
+       "nameEn": "Brioche sesame samoli",
+       "price": null,
+       "image": "img/items/samoli-brioche-sesame.webp?h=a40ec92e"
+      },
+      {
+       "id": "samoli-oats",
+       "name": "صامولي شوفان",
+       "nameEn": "Oats samoli",
+       "price": null,
+       "image": "img/items/samoli-oats.webp?h=c6786c29"
+      },
+      {
+       "id": "samoli-brioche",
+       "name": "صامولي بريوش",
+       "nameEn": "Brioche samoli",
+       "price": null,
+       "image": "img/items/samoli-brioche.webp?h=55fd839a"
+      },
+      {
+       "id": "samoli-potato",
+       "name": "صامولي بطاطس",
+       "nameEn": "Potato samoli",
+       "price": null,
+       "image": "img/items/samoli-potato.webp?h=49dad1a7"
+      }
+     ],
+     "image": "img/categories/samoli.webp?h=495d4d44"
+    },
+    {
+     "id": "toast",
+     "name": "خبز التوست",
+     "nameEn": "Toast Bread",
+     "desc": "قوام متماسك مثالي للساندويتش والتحميص",
+     "items": [
+      {
+       "id": "toast-potato",
+       "name": "توست بطاطس",
+       "nameEn": "Potato toast",
+       "price": null,
+       "image": "img/items/toast-potato.webp?h=92b6a66c"
+      },
+      {
+       "id": "toast-sliced",
+       "name": "توست مقطع",
+       "nameEn": "Sliced toast",
+       "price": null,
+       "image": "img/items/toast-sliced.webp?h=bfc95a10"
+      },
+      {
+       "id": "toast-brioche",
+       "name": "توست بريوش",
+       "nameEn": "Brioche toast",
+       "price": null,
+       "image": "img/items/toast-brioche.webp?h=0a45b05a"
+      },
+      {
+       "id": "toast-white",
+       "name": "توست أبيض",
+       "nameEn": "White toast",
+       "price": null,
+       "image": "img/items/toast-white.webp?h=40f23c94"
+      },
+      {
+       "id": "toast-brown",
+       "name": "توست أسمر",
+       "nameEn": "Brown toast",
+       "price": null,
+       "image": "img/items/toast-brown.webp?h=0a2b2b89"
+      }
+     ],
+     "image": "img/categories/toast.webp?h=41a7e4d1"
+    },
+    {
+     "id": "babka",
+     "name": "خبز البابكا",
+     "nameEn": "Babka",
+     "desc": "١٢ نكهة حلوة ومالحة",
+     "items": [
+      {
+       "id": "babka-pistachio",
+       "name": "بابكا شوكولاتة بيستاشيو",
+       "nameEn": "Babka pistachio",
+       "price": null,
+       "image": "img/items/babka-pistachio.webp?h=2c3f41e3"
+      },
+      {
+       "id": "babka-labneh-zaatar",
+       "name": "بابكا لبنة وزعتر",
+       "nameEn": "Babka labneh zaatar",
+       "price": null,
+       "image": "img/items/babka-labneh-zaatar.webp?h=70ca7213"
+      },
+      {
+       "id": "babka-blueberry",
+       "name": "بابكا بلوبيري",
+       "nameEn": "Babka blueberry",
+       "price": null,
+       "image": "img/items/babka-blueberry.webp?h=bf64e746"
+      },
+      {
+       "id": "babka-pizza",
+       "name": "بابكا بيتزا",
+       "nameEn": "Babka pizza",
+       "price": null,
+       "image": "img/items/babka-pizza.webp?h=a2dbb5a3"
+      },
+      {
+       "id": "babka-cheese",
+       "name": "بابكا تشيز",
+       "nameEn": "Babka cheese",
+       "price": null,
+       "image": "img/items/babka-cheese.webp?h=c399fbe6"
+      },
+      {
+       "id": "babka-chocolate",
+       "name": "بابكا شوكولاتة",
+       "nameEn": "Babka chocolate",
+       "price": null,
+       "image": "img/items/babka-chocolate.webp?h=aea361eb"
+      },
+      {
+       "id": "babka-red-cherry",
+       "name": "بابكا كريز أحمر",
+       "nameEn": "Babka red cherry",
+       "price": null,
+       "image": "img/items/babka-red-cherry.webp?h=b446b436"
+      },
+      {
+       "id": "babka-zaatar",
+       "name": "بابكا زعتر",
+       "nameEn": "Babka zaatar",
+       "price": null,
+       "image": "img/items/babka-zaatar.webp?h=3b56fbff"
+      },
+      {
+       "id": "babka-halava",
+       "name": "بابكا رهش",
+       "nameEn": "Babka halava",
+       "price": null,
+       "image": "img/items/babka-halava.webp?h=1464fa8f"
+      },
+      {
+       "id": "babka-kinder",
+       "name": "بابكا كيندر",
+       "nameEn": "Babka kinder",
+       "price": null,
+       "image": "img/items/babka-kinder.webp?h=facb9c91"
+      },
+      {
+       "id": "babka-italiano",
+       "name": "بابكا إيطاليانو",
+       "nameEn": "Babka italiano",
+       "price": null,
+       "image": "img/items/babka-italiano.webp?h=4cf07255"
+      },
+      {
+       "id": "babka-honey-cheese",
+       "name": "بابكا عسل وتشيز",
+       "nameEn": "Babka honey cheese",
+       "price": null,
+       "image": "img/items/babka-honey-cheese.webp?h=710560ce"
+      }
+     ]
+    },
+    {
+     "id": "french-pastries",
+     "name": "المعجنات الفرنسية",
+     "nameEn": "French Pastries",
+     "desc": "سلال عجين مقرمشة بحشوات شرقية",
+     "items": [
+      {
+       "id": "fp-labneh-zaatar",
+       "name": "لبنة مع الزعتر",
+       "nameEn": "Labneh & zaatar",
+       "price": null,
+       "image": "img/items/fp-labneh-zaatar.webp?h=0a789b72"
+      },
+      {
+       "id": "fp-cheese-sumac",
+       "name": "تشيز مع السماق",
+       "nameEn": "Cheese & sumac",
+       "price": null,
+       "image": "img/items/fp-cheese-sumac.webp?h=7092b77a"
+      },
+      {
+       "id": "fp-cheese-blackseed",
+       "name": "تشيز مع حبة البركة",
+       "nameEn": "Cheese & black seed",
+       "price": null,
+       "image": "img/items/fp-cheese-blackseed.webp?h=8a3e7106"
+      },
+      {
+       "id": "fp-falafel",
+       "name": "فلافل",
+       "nameEn": "Falafel",
+       "price": null,
+       "image": "img/items/fp-falafel.webp?h=8c70c7be"
+      },
+      {
+       "id": "fp-spinach",
+       "name": "سبانخ",
+       "nameEn": "Spinach",
+       "price": null,
+       "image": "img/items/fp-spinach.webp?h=dbfaf055"
+      }
+     ],
+     "image": "img/categories/french-pastries.webp?h=4f8be807"
+    },
+    {
+     "id": "sandwiches",
+     "name": "الساندويتش",
+     "nameEn": "Sandwiches",
+     "desc": "ساندويتشات جاهزة للعرض والتسخين",
+     "items": [
+      {
+       "id": "sw-chicken",
+       "name": "ساندويتش تشيكن",
+       "nameEn": "Chicken sandwich",
+       "price": null,
+       "image": "img/items/sw-chicken.webp?h=a740942e"
+      },
+      {
+       "id": "sw-turkey",
+       "name": "ساندويتش تركي",
+       "nameEn": "Turkey sandwich",
+       "price": null,
+       "image": "img/items/sw-turkey.webp?h=1b71d644"
+      },
+      {
+       "id": "sw-halloumi",
+       "name": "ساندويتش جبن حلوم",
+       "nameEn": "Halloumi sandwich",
+       "price": null,
+       "image": "img/items/sw-halloumi.webp?h=a1d2372a"
+      },
+      {
+       "id": "sw-tuna",
+       "name": "ساندويتش تونا",
+       "nameEn": "Tuna sandwich",
+       "price": null,
+       "image": "img/items/sw-tuna.webp?h=f39e3e8f"
+      },
+      {
+       "id": "sw-egg-cheese",
+       "name": "ساندويتش إيج تشيز",
+       "nameEn": "Egg & cheese sandwich",
+       "price": null,
+       "image": "img/items/sw-egg-cheese.webp?h=f32a5eb7"
+      }
+     ],
+     "image": "img/categories/sandwiches.webp?h=c252554c"
+    },
+    {
+     "id": "panini",
+     "name": "البانيني",
+     "nameEn": "Panini",
+     "desc": "قاعدة مثالية للساندويتش المشوي — ٦ إنش",
+     "items": [
+      {
+       "id": "panini-black",
+       "name": "بانيني أسود",
+       "nameEn": "Black panini",
+       "price": null,
+       "image": "img/items/panini-black.webp?h=bf3964c7"
+      },
+      {
+       "id": "panini-plain",
+       "name": "بانيني عادي",
+       "nameEn": "Plain panini",
+       "price": null,
+       "image": "img/items/panini-plain.webp?h=b15ae9fe"
+      },
+      {
+       "id": "panini-protein",
+       "name": "بانيني بروتين",
+       "nameEn": "Protein panini",
+       "price": null,
+       "image": "img/items/panini-protein.webp?h=9295d8b2"
+      },
+      {
+       "id": "cereal-bread",
+       "name": "خبز سيريال",
+       "nameEn": "Cereal bread",
+       "price": null,
+       "image": "img/items/cereal-bread.webp?h=74de043d"
+      },
+      {
+       "id": "ciabatta",
+       "name": "خبز شيباتا",
+       "nameEn": "Ciabatta bread",
+       "price": null,
+       "image": "img/items/ciabatta.webp?h=c16e5abb"
+      }
+     ],
+     "image": "img/categories/panini.webp?h=f06f0e05"
+    },
+    {
+     "id": "sourdough",
+     "name": "الحبة الكاملة والسوردو",
+     "nameEn": "Whole Grain & Sourdough",
+     "desc": "عجينة مخمّرة طبيعياً ودقيق الحبة الكاملة",
+     "items": [
+      {
+       "id": "sourdough-rustic",
+       "name": "سوردو ريفي",
+       "nameEn": "Rustic sourdough",
+       "price": null,
+       "variants": [
+        {
+         "name": "450 جم",
+         "price": null
+        },
+        {
+         "name": "800 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/sourdough-rustic.webp?h=5a524d7c"
+      },
+      {
+       "id": "sourdough-loaf",
+       "name": "خبز السوردو الطويل",
+       "nameEn": "Sourdough loaf",
+       "price": null,
+       "variants": [
+        {
+         "name": "450 جم",
+         "price": null
+        },
+        {
+         "name": "600 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/sourdough-loaf.webp?h=9bcac959"
+      },
+      {
+       "id": "multigrain",
+       "name": "خبز الحبة الكاملة",
+       "nameEn": "Multigrain whole wheat",
+       "price": null,
+       "variants": [
+        {
+         "name": "400 جم",
+         "price": null
+        },
+        {
+         "name": "600 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/multigrain.webp?h=1be1a59a"
+      }
+     ],
+     "image": "img/categories/sourdough.webp?h=68e91ed0"
+    },
+    {
+     "id": "tea-bread",
+     "name": "خبز الشاي",
+     "nameEn": "Tea Bread",
+     "desc": "نكهات تقليدية بلمسة عصرية",
+     "items": [
+      {
+       "id": "tea-bread-labneh",
+       "name": "خبز شاي باللبنة",
+       "nameEn": "Labneh tea bread",
+       "price": null,
+       "image": "img/items/tea-bread-labneh.webp?h=0f5ae434"
+      },
+      {
+       "id": "tea-bread-zaatar",
+       "name": "خبز شاي بالزعتر",
+       "nameEn": "Zaatar tea bread",
+       "price": null,
+       "image": "img/items/tea-bread-zaatar.webp?h=786b9b7c"
+      },
+      {
+       "id": "tea-bread-cheese",
+       "name": "خبز شاي بالجبنة",
+       "nameEn": "Cheese tea bread",
+       "price": null,
+       "image": "img/items/tea-bread-cheese.webp?h=b762030d"
+      }
+     ],
+     "image": "img/categories/tea-bread.webp?h=036d4643"
+    },
+    {
+     "id": "honeycomb",
+     "name": "خلية النحل",
+     "nameEn": "Honey Comb",
+     "desc": "خلية النحل بحشواتها الغنية",
+     "items": [
+      {
+       "id": "hc-cheesecake",
+       "name": "خلية نحل تشيز كيك",
+       "nameEn": "Cheesecake honey comb",
+       "price": null,
+       "image": "img/items/hc-cheesecake.webp?h=3a809efa"
+      },
+      {
+       "id": "hc-cinnamon",
+       "name": "خلية نحل بالقرفة",
+       "nameEn": "Cinnamon honey comb",
+       "price": null,
+       "image": "img/items/hc-cinnamon.webp?h=b38cdb69"
+      },
+      {
+       "id": "hc-plain",
+       "name": "خلية نحل",
+       "nameEn": "Honey comb",
+       "price": null,
+       "image": "img/items/hc-plain.webp?h=203c4e46"
+      },
+      {
+       "id": "hc-chocolate",
+       "name": "خلية نحل بالشوكولاتة",
+       "nameEn": "Chocolate honey comb",
+       "price": null,
+       "image": "img/items/hc-chocolate.webp?h=e6a4c567"
+      },
+      {
+       "id": "hc-cinnamon-sauce",
+       "name": "خلية نحل سينامون بالصوص",
+       "nameEn": "Cinnamon sauce honey comb",
+       "price": null,
+       "image": "img/items/hc-cinnamon-sauce.webp?h=967e5d60"
+      }
+     ],
+     "image": "img/categories/honeycomb.webp?h=4c2d4294"
+    },
+    {
+     "id": "cookies",
+     "name": "الكوكيز",
+     "nameEn": "Cookies",
+     "desc": "كوكيز سميك بقلب طري",
+     "items": [
+      {
+       "id": "cookie-kinder",
+       "name": "كيندر كوكيز",
+       "nameEn": "Kinder cookies",
+       "price": null,
+       "variants": [
+        {
+         "name": "80 جم",
+         "price": null
+        },
+        {
+         "name": "100 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/cookie-kinder.webp?h=9e3256cd"
+      },
+      {
+       "id": "cookie-red-velvet",
+       "name": "ريد فيلفت كوكيز",
+       "nameEn": "Red velvet cookies",
+       "price": null,
+       "variants": [
+        {
+         "name": "80 جم",
+         "price": null
+        },
+        {
+         "name": "100 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/cookie-red-velvet.webp?h=078853b9"
+      },
+      {
+       "id": "cookie-regular",
+       "name": "كوكيز الدبه",
+       "nameEn": "Regular cookies",
+       "price": null,
+       "variants": [
+        {
+         "name": "80 جم",
+         "price": null
+        },
+        {
+         "name": "100 جم",
+         "price": null
+        }
+       ],
+       "image": "img/items/cookie-regular.webp?h=9274683f"
+      }
+     ],
+     "image": "img/categories/cookies.webp?h=6448f99d"
+    },
+    {
+     "id": "cakes",
+     "name": "حلويات المخبز",
+     "nameEn": "Sweet Bakery",
+     "desc": "كيك منزلي الطابع",
+     "items": [
+      {
+       "id": "cake-orange",
+       "name": "كيك البرتقال",
+       "nameEn": "Orange cake",
+       "price": null,
+       "image": "img/items/cake-orange.webp?h=3c6ae86c"
+      },
+      {
+       "id": "cake-chocolate",
+       "name": "كيك شوكولاتة",
+       "nameEn": "Chocolate cake",
+       "price": null,
+       "image": "img/items/cake-chocolate.webp?h=7f7224f6"
+      }
+     ],
+     "image": "img/categories/cakes.webp?h=5f368e2c"
+    }
+   ]
+  },
+  {
+   "id": "drinks",
+   "name": "المشروبات",
+   "nameEn": "Drinks",
+   "categories": [
+    {
+     "id": "hot-drinks",
+     "name": "مشروبات ساخنة",
+     "nameEn": "Hot drinks",
+     "items": [
+      {
+       "id": "coffee-day",
+       "name": "قهوة اليوم",
+       "nameEn": "Coffee of the day",
+       "price": 6
+      },
+      {
+       "id": "filter-coffee",
+       "name": "قهوة مقطرة",
+       "nameEn": "Filter coffee",
+       "price": 7,
+       "image": "img/items/filter-coffee.webp?h=fa2b3fa1"
+      },
+      {
+       "id": "tea",
+       "name": "شاي",
+       "nameEn": "Tea",
+       "price": 4
+      },
+      {
+       "id": "english-tea",
+       "name": "شاي إنجليزي",
+       "nameEn": "English tea",
+       "price": 4,
+       "image": "img/items/english-tea.webp?h=18e6b29e"
+      },
+      {
+       "id": "moroccan-tea",
+       "name": "شاي مغربي",
+       "nameEn": "Morocco tea",
+       "price": 4,
+       "image": "img/items/moroccan-tea.webp?h=d0afeff7"
+      },
+      {
+       "id": "lipton-tea",
+       "name": "شاي ليبتون",
+       "nameEn": "Lipton tea",
+       "price": 2
+      },
+      {
+       "id": "teapot-small",
+       "name": "براد شاي صغير",
+       "nameEn": "Small teapot",
+       "price": 7
+      },
+      {
+       "id": "teapot-large",
+       "name": "براد شاي كبير",
+       "nameEn": "Large teapot",
+       "price": 10
+      }
+     ]
+    },
+    {
+     "id": "cold-drinks",
+     "name": "مشروبات باردة",
+     "nameEn": "Cold drinks",
+     "items": [
+      {
+       "id": "soft-drinks",
+       "name": "مشروبات غازية",
+       "nameEn": "Soft drinks",
+       "price": 3.5,
+       "image": "img/items/soft-drinks.webp?h=4826f966"
+      },
+      {
+       "id": "water",
+       "name": "ماء",
+       "nameEn": "Water",
+       "price": 1,
+       "image": "img/items/water.webp?h=b7765d9c"
+      }
+     ]
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>مخابز التفاح الأخضر</title>
+  <meta name="description" content="اطلب فطائر ومدور ومخبوزات التفاح الأخضر من أقرب فرع — استلام من الفرع أو توصيل.">
+  <meta name="theme-color" content="#4a2c1a">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="مخابز التفاح الأخضر">
+  <meta property="og:title" content="ثبّت تطبيق مخابز التفاح الأخضر">
+  <meta property="og:description" content="اطلب فطائر ومدور ومخبوزات التفاح الأخضر من أقرب فرع — استلام من الفرع أو توصيل.">
+  <meta property="og:url" content="https://mosaadzomara1-tech.github.io/green-apple/">
+  <meta property="og:image" content="https://mosaadzomara1-tech.github.io/green-apple/img/og.jpg?h=602ae987">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="التفاح الأخضر">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="favicon.png?h=14e423d3">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png?h=bb0d862b">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="app.css?v=ga-202609152012">
+  <script src="install.js?v=ga-202609152012"></script>
+</head>
+<body>
+  <header class="top">
+    <div class="wrap">
+      <div class="logo"><img src="icons/icon-192.png?h=6f1f1e01" alt=""></div>
+      <button class="branch-pick" id="branchBtn" aria-label="اختيار الفرع">
+        <small id="branchLabel">الطلب من</small>
+        <b id="branchName">جارٍ تحديد الفرع…</b>
+      </button>
+      <button class="icon-btn" id="locBtn" aria-label="حدّد موقعي">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3"/><circle cx="12" cy="12" r="8"/></svg>
+      </button>
+    </div>
+  </header>
+
+  <main id="view" class="wrap"></main>
+
+  <div class="cartbar" id="cartbar" hidden>
+    <button class="btn" id="cartbarBtn"><span id="cartbarCount">٠ صنف</span><span>عرض السلة</span><span id="cartbarTotal"></span></button>
+  </div>
+
+  <nav class="nav">
+    <div class="wrap">
+      <button data-go="#/" id="nav-home"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 11l9-7 9 7v9a1 1 0 0 1-1 1h-5v-6h-6v6H4a1 1 0 0 1-1-1z"/></svg>الرئيسية</button>
+      <button data-go="#/search" id="nav-search"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="7"/><path d="M21 21l-5-5"/></svg>بحث</button>
+      <button data-go="#/cart" id="nav-cart"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 4h2l2.4 11.2a2 2 0 0 0 2 1.6h7.7a2 2 0 0 0 2-1.5L21 8H6"/><circle cx="10" cy="20.5" r="1.3"/><circle cx="17" cy="20.5" r="1.3"/></svg>السلة</button>
+      <button data-go="#/orders" id="nav-orders"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 3h12v18l-3-2-3 2-3-2-3 2z"/><path d="M9 8h6M9 12h6"/></svg>طلباتي</button>
+    </div>
+  </nav>
+
+  <div id="sheets"></div>
+  <div id="toasts"></div>
+
+  <script src="config.js?v=ga-202609152012"></script>
+  <script src="logic.js?v=ga-202609152012"></script>
+  <script src="remote.js?v=ga-202609152012"></script>
+  <script src="app.js?v=ga-202609152012"></script>
+</body>
+</html>
